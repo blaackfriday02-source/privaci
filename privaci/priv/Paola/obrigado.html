@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagamento confirmado • Privacy</title>
+
+  <link rel="icon" type="image/png" href="images/219-images-favicon.png">
+
+  <style>
+    :root{
+      --orange:#f97316;
+      --orange-dark:#ea580c;
+      --bg:#f9fafb;
+      --card:#ffffff;
+      --text:#1f2937;
+      --muted:#6b7280;
+      --success:#16a34a;
+      --radius:14px;
+      --shadow:0 10px 25px rgba(0,0,0,.08);
+    }
+
+    *{box-sizing:border-box;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+    }
+
+    header{
+      background:#fff;
+      border-bottom:1px solid #e5e7eb;
+      padding:16px;
+      display:flex;
+      justify-content:center;
+    }
+    header img{
+      height:32px;
+    }
+
+    main{
+      max-width:520px;
+      margin:40px auto;
+      padding:0 16px;
+    }
+
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:28px 22px;
+      text-align:center;
+    }
+
+    .icon{
+      width:72px;
+      height:72px;
+      border-radius:50%;
+      background:rgba(22,163,74,.12);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin:0 auto 16px;
+    }
+    .icon svg{
+      width:36px;
+      height:36px;
+      stroke:var(--success);
+    }
+
+    h1{
+      margin:10px 0;
+      font-size:22px;
+      font-weight:700;
+    }
+
+    p{
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.5;
+    }
+
+    .info{
+      margin-top:18px;
+      background:#f9fafb;
+      border:1px solid #e5e7eb;
+      border-radius:10px;
+      padding:14px;
+      font-size:14px;
+      text-align:left;
+    }
+
+    .info strong{
+      color:#111827;
+    }
+
+    .btn{
+      display:block;
+      margin-top:20px;
+      width:100%;
+      padding:14px;
+      border-radius:12px;
+      border:none;
+      font-size:16px;
+      font-weight:700;
+      cursor:pointer;
+    }
+
+    .btn-primary{
+      background:linear-gradient(to right,var(--orange),var(--orange-dark));
+      color:#fff;
+    }
+
+    .btn-secondary{
+      background:#fff;
+      border:1px solid #e5e7eb;
+      color:#374151;
+      margin-top:12px;
+    }
+
+    footer{
+      margin-top:24px;
+      text-align:center;
+      font-size:12px;
+      color:#9ca3af;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="images/images-logo.webp" alt="Privacy">
+</header>
+
+<main>
+  <div class="card">
+
+    <div class="icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 6L9 17l-5-5"/>
+      </svg>
+    </div>
+
+    <h1>Pagamento confirmado</h1>
+    <p>
+      Seu pagamento foi aprovado com sucesso.<br>
+      Agora você já pode aproveitar todo o conteúdo exclusivo.
+    </p>
+
+    <div class="info">
+      <div><strong>Status:</strong> Pagamento aprovado</div>
+      <div><strong>Acesso:</strong> Liberação imediata</div>
+      <div><strong>Forma de pagamento:</strong> Pix</div>
+    </div>
+
+    <button class="btn btn-primary" onclick="location.href='/'">
+      Acessar conteúdo
+    </button>
+
+    <button class="btn btn-secondary" onclick="location.href='https://privaci.onrender.com'">
+      Voltar para o início
+    </button>
+
+  </div>
+
+  <footer>
+    © 2026 • Todos os direitos reservados
+  </footer>
+</main>
+
+</body>
+</html>
