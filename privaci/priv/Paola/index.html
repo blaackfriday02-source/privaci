@@ -1617,13 +1617,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  window.addEventListener("beforeunload", function () {
-    if (localStorage.getItem("checkout_iniciado") === "true") {
-      fbq('trackCustom', 'CheckoutAbandonado', {
-        plano: localStorage.getItem("checkout_plano") || 'desconhecido'
-      });
-    }
-  });
 
 });
 </script>
